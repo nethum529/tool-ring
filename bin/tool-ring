@@ -1,0 +1,10 @@
+#!/bin/sh
+# gtk4-layer-shell must be loaded before libwayland-client, or the overlay
+# silently fails to become a layer surface. LD_PRELOAD is the documented fix.
+#
+# Resolves the repo root relative to this script (follows symlinks) so it works
+# whether invoked in-place or via a symlink in ~/.local/bin.
+SELF="$(readlink -f "$0")"
+ROOT="$(dirname "$(dirname "$SELF")")"
+exec env LD_PRELOAD="/usr/lib/libgtk4-layer-shell.so${LD_PRELOAD:+:$LD_PRELOAD}" \
+    python3 "$ROOT/tool_ring.py" "$@"
