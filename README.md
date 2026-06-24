@@ -1,9 +1,5 @@
 # tool-ring
 
-A radial ring of launcher badges that pops up **around your mouse cursor** — a
-Logitech-style tool ring for Wayland. Bind it to a key (e.g. `Super+G`), tap,
-and click a badge to launch.
-
 ![tool-ring: a ring of launcher badges around the cursor](docs/demo.png)
 
 Built for Hyprland but works on any `wlr-layer-shell` compositor. The ring is
