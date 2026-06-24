@@ -35,7 +35,7 @@ sudo pacman -S python-gobject gtk4 gtk4-layer-shell librsvg
 ## Install
 
 ```sh
-git clone https://github.com/<you>/tool-ring.git ~/Projects/tool-ring
+git clone https://github.com/nethum529/tool-ring.git ~/Projects/tool-ring
 ln -s ~/Projects/tool-ring/bin/tool-ring ~/.local/bin/tool-ring
 ```
 
